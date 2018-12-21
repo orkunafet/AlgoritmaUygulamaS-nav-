@@ -1,0 +1,21 @@
+metin=input("Bir metin girin: ")
+ters=metin[::-1]
+
+harf=[]
+sayi=[]
+for i in metin:
+    if not(i in harf):
+        harf.append(i)
+        sayi.append(1)
+    else:
+        sayi[harf.index(i)]=sayi[harf.index(i)]+1
+print("Harf -> Sayi")
+for i in range(len(harf)):
+    print(harf[i], " -> ", sayi[i])
+print("Toplam Harf Sayısı: ",len(sayi))
+print(ters)
+liste=[metin.split()]
+print(liste)
+print(ters.split())
+
+
