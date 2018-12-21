@@ -1,0 +1,9 @@
+dizi=[]
+for i in range (5):
+    gelen = input ("Bir Sayı Giriniz:")
+    dizi.append(gelen)
+    dizi.sort(reverse=True)
+    print(dizi)
+    dosya =open("C:\221120171027_sonuc.txt" ,"w")
+    for j in range(5):
+        dosya.write(dizi[i]+" ")
